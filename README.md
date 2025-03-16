@@ -12,7 +12,7 @@ The project includes visualizations of spectrograms and comparison metrics to an
 - Matches test clips against a database using similarity metrics.
 - Displays spectrograms for all stored and test audio files.
 - Provides a ranked list of the best matches for each test clip.
-- Supports waveform, STFT, and Mel-spectrogram visualizations.
+- Supports waveform, STFT and Mel-spectrogram visualizations.
 
 
 ## Usage
@@ -95,7 +95,7 @@ Here are spectrograms of the database songs:
    <summary><i>open/close the diagram</i></summary>
 <img src="/plot/db_spectrograms.png" width="60%">
 </details>
-And their similarities (the less number the more similar two songs are)
+And their similarities (the lower the number, the more similar two songs are):
 
 <img src="/plot/heatmap_linear.png" width="70%">
 <img src="/plot/heatmap_cosine.png" width="70%">
