@@ -1,3 +1,2 @@
 # Shazam (kinda 🤭)
-
-![db_spectrograms](plot/db_spectrograms.png?raw=true)
+<img src="https://github.com/Natanius18/kinda_shazam/blob/main/plot/db_spectrograms.png" width="45%">
