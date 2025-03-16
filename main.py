@@ -50,7 +50,7 @@ def plot_similarity_heatmap(fingerprints, distance_type='cosine'):
     sorted_names = [names[i] for i in sorted_idx]
 
     plt.figure(figsize=(20, 16))
-    sns.heatmap(sorted_matrix, xticklabels=sorted_names, yticklabels=names, annot=True, fmt=".4f" if distance_type == 'cosine' else ".0f",
+    sns.heatmap(sorted_matrix, xticklabels=sorted_names, yticklabels=sorted_names, annot=True, fmt=".4f" if distance_type == 'cosine' else ".0f",
                 cmap=sns.color_palette("Oranges", as_cmap=True).reversed())
     plt.title(f"Heatmap of the similarity between all songs ({distance_type} distance)")
     plt.xlabel("Songs")
