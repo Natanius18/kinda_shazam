@@ -88,7 +88,7 @@ If the linear and cosine distances show different results, you will see both vis
   <img src="/plot/linear_diagram.png" width="49%" />
   <img src="/plot/cosine_diagram.png" width="49%" /> 
 </p>
-For example, here we can see that cosine-based approach showed better result.
+For example, here we can see that cosine-based approach showed a better result.
 <br><br>
 Here are spectrograms of the database songs:
 <details>
