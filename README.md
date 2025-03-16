@@ -28,7 +28,7 @@ The project includes visualizations of spectrograms and comparison metrics to an
 
 ### Step 2: Run the Script
 
-Execute the main script `main.py`to analyze and match test audio clips:
+Execute the main script `main.py` to analyze and match test audio clips:
 
 ### Step 3: View Results
 
@@ -39,7 +39,7 @@ Execute the main script `main.py`to analyze and match test audio clips:
 ## How It Works
 
 1. **Audio Fingerprinting**: Converts audio into Mel-spectrogram representations and extracts fingerprints.
-2. **Similarity Comparison**: Uses distance metrics (e.g., cosine similarity) to compare test fingerprints against the
+2. **Similarity Comparison**: Uses distance metrics (e.g., Euclidean distance and cosine similarity) to compare test fingerprints against the
    database.
 3. **Visualization**: Generates spectrograms and ranked match lists to evaluate recognition performance.
 
@@ -77,14 +77,28 @@ File counting-stars-acoustic-cover.mp3 is most similar to OneRepublic – Counti
 ## Spectrogram and Match Visualization
 
 Below is an example of the top-10 best matches visualization:
+<p align="middle">
+  <img src="/plot/linear10.png" width="49%" />
+  <img src="/plot/cosine10.png" width="49%" /> 
+</p>
 
-<img scr="https://github.com/Natanius18/kinda_shazam/blob/main/plot/linear10.png" width="60%">
-<img scr="https://github.com/Natanius18/kinda_shazam/blob/main/plot/cosine10.png">
-![rr](plot/linear10.png)
+For each test song you will see its comparison to the best match: Waveform, STFT spectrogram and Mel-spectrogram. 
+If the linear and cosine distances show different results, you will see both visualizations:
+<p align="middle">
+  <img src="/plot/linear_diagram.png" width="49%" />
+  <img src="/plot/cosine_diagram.png" width="49%" /> 
+</p>
+For example, here we can see that cosine-based approach showed better result.
+<br><br>
+Here are spectrograms of the database songs:
+<details>
+   <summary><i>open/close the diagram</i></summary>
+<img src="/plot/db_spectrograms.png" width="60%">
+</details>
+And their similarities (the less number the more similar two songs are)
 
-Additionally, the system generates spectrograms of the database songs, making it easier to analyze how the fingerprints
-are formed.
+<img src="/plot/heatmap_linear.png" width="70%">
+<img src="/plot/heatmap_cosine.png" width="70%">
 
-<img src="https://github.com/Natanius18/kinda_shazam/blob/main/plot/db_spectrograms.png" width="60%">
 
 
